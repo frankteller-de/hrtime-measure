@@ -1,0 +1,20 @@
+{
+  "name": "hrtime-measure",
+  "version": "1.0.11",
+  "description": "measures execution time step by step",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elstonie/hrtime-measure.git"
+  }, 
+  "keywords": [
+    "measure",
+    "high-resolution",
+    "time"
+  ],
+  "author": "Frank Hinkel",
+  "license": "MIT"
+}
