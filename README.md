@@ -1,7 +1,8 @@
+# hrtime-measure
 This module measures the execution time of javascript operations.
 
-# Example
-This Examples starts the measurement in the app.js file.
+## Example
+This example starts the measurement in the app.js file.
 
 ```javascript
 var measure = require('hrtime-measure');
@@ -26,7 +27,7 @@ measure.step('init', 'middleware.js:initNumeral');
 measure.end('init', 'middleware.js:end', true);
 ```
 
-## Console Output
+### Console Output
 
 ```bash
 Total execution time "init": ~ 0s 83.52 ms
@@ -36,21 +37,21 @@ Total execution time "init": ~ 0s 83.52 ms
 4. 0s 0.19 ms		middleware.js:return
 ```
 
-# Install
+## Install
 ```bash
 npm install hrtime-measure --save
 ```
 
-# API
+## API
 
-## start(label)
+### start(label)
 Start the measurement and give the name for the new timer. This will identify the timer; use the same name when calling measure.end() to stop the timer.
 
-## step(label,[title])
+### step(label,[title])
 Step set a timesplit by `label` with any optional `title`.
 
-## end(label,[title],[print])
+### end(label,[title],[print])
 Stop the measurement and return the ouput as a string. If the optional parameter `print` is set to true, the time will output to the console.
 
-## disable()
+### disable()
 With this function, the measurement can be turned off in production.
