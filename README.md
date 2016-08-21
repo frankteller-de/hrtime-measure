@@ -1,4 +1,7 @@
-# hrtime-measure
+# hrtime-measure [![NPM version](https://badge.fury.io/js/hrtime-measure.svg)](http://badge.fury.io/js/hrtime-measure)
+
+[![NPM](https://nodei.co/npm/hrtime-measure.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/hrtime-measure/)
+
 This module measures the execution time of javascript operations.
 
 ## Example
