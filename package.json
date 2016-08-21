@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elstonie/hrtime-measure.git"
+    "url": "git+https://github.com/feinmetz/hrtime-measure.git"
   }, 
   "keywords": [
     "measure",
