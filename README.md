@@ -28,10 +28,10 @@ measure.step('AnyName', 'middleware.js:initNumeral');
 measure.end('AnyName', 'middleware.js:end', true);
 ```
 
-### Console Output
+### Console Output  
 
 ```bash
-Total execution time "AnyName": ~ 0s 83.52 ms 
+Total execution time "AnyName": ~ 0s 83.52 ms
 1. 0s 0.09 ms		app.js:http_io
 2. 0s 13.13 ms		app.js:middleware()
 3. 0s 70.11 ms		middleware.js:initNumeral
