@@ -1,6 +1,6 @@
 {
   "name": "hrtime-measure",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "measures execution time step by step",
   "main": "index.js",
   "scripts": {

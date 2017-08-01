@@ -38,6 +38,27 @@ Total execution time "AnyName": ~ 0s 83.52 ms
 4. 0s 0.19 ms		middleware.js:return
 ```
 
+## Group Steps
+
+```javascript
+const measure = require('hrtime-measure', true);
+
+// start measurement
+measure.start('AnyName');
+measure.step('AnyName', 'prepare loop');
+measure.step('AnyName', 'loop');
+measure.step('AnyName', 'loop');
+measure.end('AnyName', 'end loop', true);
+```
+### Console Output  
+
+```bash
+Total execution time "AnyName": ~ 0s 83.52 ms
+1. 0s 0.09 ms		prepare loop
+2. 0s 70.13 ms		loop
+3. 0s 13.11 ms		end loop
+```
+
 ## Install
 ```bash
 npm install hrtime-measure --save
