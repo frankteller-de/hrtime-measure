@@ -1,6 +1,6 @@
 {
   "name": "hrtime-measure",
-  "version": "1.0.12",
+  "version": "1.0.14",
   "description": "measures execution time step by step",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/feinmetz/hrtime-measure.git"
-  }, 
+  },
   "keywords": [
     "measure",
     "high-resolution",

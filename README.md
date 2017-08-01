@@ -8,32 +8,30 @@ This module measures the execution time of javascript operations.
 This example starts the measurement in the app.js file.
 
 ```javascript
-var measure = require('hrtime-measure');
+const measure = require('hrtime-measure');
 
 // start measurement
-measure.start('init');
-
-// set the first steps
-measure.step('init', 'app.js:http_io');
-measure.step('init', 'app.js:middleware()');
+measure.start('AnyName');
 ```
 
-And continues the measurement in the middleware.
+And continues the measurement in the middleware.js file.
 
 ```javascript
-var measure = require('hrtime-measure');
+const measure = require('hrtime-measure');
 
-// next steps in the middleware
-measure.step('init', 'middleware.js:initNumeral');
+// set the steps by measure name and step title.
+measure.step('AnyName', 'app.js:http_io');
+measure.step('AnyName', 'app.js:middleware()');
+measure.step('AnyName', 'middleware.js:initNumeral');
 
-// stop measurement
-measure.end('init', 'middleware.js:end', true);
+// stop measurement measure name.
+measure.end('AnyName', 'middleware.js:end', true);
 ```
 
 ### Console Output
 
 ```bash
-Total execution time "init": ~ 0s 83.52 ms
+Total execution time "AnyName": ~ 0s 83.52 ms 
 1. 0s 0.09 ms		app.js:http_io
 2. 0s 13.13 ms		app.js:middleware()
 3. 0s 70.11 ms		middleware.js:initNumeral
