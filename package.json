@@ -1,6 +1,6 @@
 {
   "name": "hrtime-measure",
-  "version": "1.0.15",
+  "version": "1.0.19",
   "description": "measures execution time step by step",
   "main": "index.js",
   "scripts": {
@@ -16,5 +16,8 @@
     "time"
   ],
   "author": "Frank Hinkel",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "columnify": "^1.5.4"
+  }
 }
